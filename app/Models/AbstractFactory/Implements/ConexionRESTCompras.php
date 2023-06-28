@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models\AbstractFactory\Implements;
+
+use App\Models\AbstractFactory\Interfaces\ConexionRESTInterface;
+
+class ConexionRESTCompras implements ConexionRESTInterface
+{
+
+    public function leerURL($url)
+    {
+        echo "Conectándose a " . $url;
+    }
+}
